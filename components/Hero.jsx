@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <div className='
-    flex flex-col gap-8 justify-center items-center h-[calc(100%-4rem)] h-[1200px]
+    flex flex-col gap-8 justify-center items-center h-[calc(100%-4rem)]
     '>
 
       <div className=' relative w-52 h-52 flex justify-center items-center rounded-full relative overflow-hidden	' >
