@@ -5,6 +5,8 @@ import Hero from '../components/Hero'
 import MobileMenuModal from '../components/MobileMenuModal'
 import { useState } from 'react'
 import About from '../components/About'
+import Skills from '../components/Skills'
+import Resume from '../components/Resume'
 
 export default function Home() {
 
@@ -22,6 +24,10 @@ export default function Home() {
         <Hero />
 
         <About />
+
+        <Skills />
+
+        <Resume />
 
       </div>
     </>
