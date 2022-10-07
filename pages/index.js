@@ -7,6 +7,7 @@ import { useState } from 'react'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Resume from '../components/Resume'
+import Work from '../components/Work'
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
           <title>Younes Zahzouh</title>
           <meta name="description" content="Younes Zahzouh Portfolio" />
           <link rel="icon" href="/favicon.ico" />
+          <script src='https://www.goat1000.com/tagcanvas.min.js' />
         </Head>
 
         <Navbar />
@@ -28,6 +30,8 @@ export default function Home() {
         <Skills />
 
         <Resume />
+
+        <Work />
 
       </div>
     </>
