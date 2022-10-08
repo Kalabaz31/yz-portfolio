@@ -8,12 +8,14 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Resume from '../components/Resume'
 import Work from '../components/Work'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 export default function Home() {
 
   return (
     <>
-      <div className={"container mx-auto  h-screen max-h-auto text-white"}>
+      <div className={"px-4 mx-auto overflow-x-hidden  max-h-auto text-white"}>
         <Head>
           <title>Younes Zahzouh</title>
           <meta name="description" content="Younes Zahzouh Portfolio" />
@@ -22,16 +24,23 @@ export default function Home() {
         </Head>
 
         <Navbar />
+        <div className='container mx-auto  text-white'>
 
-        <Hero />
+          <Hero />
 
-        <About />
+          <About />
 
-        <Skills />
+          <Skills />
 
-        <Resume />
+          <Resume />
 
-        <Work />
+          <Work />
+
+          <Contact />
+        </div>
+
+
+        <Footer />
 
       </div>
     </>

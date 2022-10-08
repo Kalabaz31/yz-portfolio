@@ -1,14 +1,13 @@
 import React from 'react'
 import Experience from './Experience'
 import SectionTitle from './SectionTitle'
-import SkillBar from './SkillBar'
 
 const Resume = () => {
     return (
-        <div className='min-h-full py-4 flex flex-col  items-center justify-center'>
+        <div id='RESUME' className='py-4  flex flex-col  items-center justify-start min-h-[calc(100vh-4em)] h-fit'>
             <SectionTitle title="MY RESUME" backgroundTitle="RESUME" />
 
-            <div className="flex gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 h-fit">
                 <div>
 
                     <Experience />

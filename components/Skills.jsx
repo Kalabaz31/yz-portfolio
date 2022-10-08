@@ -1,30 +1,29 @@
 import React, { useEffect } from 'react'
 import SectionTitle from './SectionTitle'
-import SkillBar from './SkillBar'
 
 const skills = [
-    { href: "#git_", title: "Git" },
-    { href: "#git_", title: "HTML" },
-    { href: "#git_", title: "CSS" },
-    { href: "#git_", title: "SASS" },
-    { href: "#git_", title: "Redux" },
-    { href: "#git_", title: "Redux Toolkit" },
-    { href: "#git_", title: "Rtk Query" },
-    { href: "#git_", title: "ReactJs" },
-    { href: "#git_", title: "Javascript" },
-    { href: "#git_", title: "Framer-Motion" },
-    { href: "#git_", title: "TailwindCss" },
-    { href: "#git_", title: "Socket.io" },
-    { href: "#git_", title: "Axios" },
-    { href: "#git_", title: "REST" },
-    { href: "#git_", title: "NPM" },
-    { href: "#git_", title: "Yarn" },
-    { href: "#git_", title: "Webpack" },
-    { href: "#git_", title: "Vite" },
-    { href: "#git_", title: "SQL" },
-    { href: "#git_", title: "NextJs" },
-    { href: "#git_", title: "NodeJs" },
-    { href: "#git_", title: "ExpressJs" },
+    { href: "#_", title: "Git" },
+    { href: "#_", title: "HTML" },
+    { href: "#_", title: "CSS" },
+    { href: "#_", title: "SASS" },
+    { href: "#_", title: "Redux" },
+    { href: "#_", title: "Redux Toolkit" },
+    { href: "#_", title: "Rtk Query" },
+    { href: "#_", title: "ReactJs" },
+    { href: "#_", title: "Javascript" },
+    { href: "#_", title: "Framer-Motion" },
+    { href: "#_", title: "TailwindCss" },
+    { href: "#_", title: "Socket.io" },
+    { href: "#_", title: "Axios" },
+    { href: "#_", title: "REST" },
+    { href: "#_", title: "NPM" },
+    { href: "#_", title: "Yarn" },
+    { href: "#_", title: "Webpack" },
+    { href: "#_", title: "Vite" },
+    { href: "#_", title: "SQL" },
+    { href: "#_", title: "NextJs" },
+    { href: "#_", title: "NodeJs" },
+    { href: "#_", title: "ExpressJs" },
 ];
 
 
@@ -37,7 +36,7 @@ const Skills = () => {
 
         TagCanvas.wheelZoom = false;
         TagCanvas.textFont = "Raleway, sans-serif";
-        TagCanvas.textColour = "white";
+        TagCanvas.textColour = "#34D399";
         TagCanvas.textHeight = 26;
         TagCanvas.outlineMethod = "size";
         TagCanvas.outlineIncrease = 10;
@@ -71,37 +70,37 @@ const Skills = () => {
 
 
     return (
-        <div className='min-h-full py-4 flex flex-col  items-center justify-center'>
+        <div id="SKILLS" className='py-4 flex flex-col  items-center justify-center  min-h-[calc(100vh-4em)] '>
             <SectionTitle title="MY SKILLS" backgroundTitle="SKILLS" />
 
 
-            <div className='w-[100%] flex gap-8 flex-wrap h-full'>
-                <div className='basis-[300px] flex-1  flex flex-col justify-evenly gap-4'>
+            <div className='w-[100%] flex gap-8 flex-wrap h-fit  '>
+                <div className='basis-[300px] flex-1  flex flex-col justify-center gap-8 '>
                     <div className='flex flex-col gap-2 '>
                         <span> HTML & CSS / SASS </span>
                         <div className={`flex bg-gray-100/10 w-[100%] h-1 rounded-full relative 
-    before:bg-green-400 before:content-[''] before:w-[90%] before:h-1 before:rounded-full`}>
+    before:bg-emerald-400 before:content-[''] before:w-[90%] before:h-1 before:rounded-full`}>
                         </div>
                     </div>
 
                     <div className='flex flex-col gap-2 '>
                         <span> React Js </span>
                         <div className={`flex bg-gray-100/10 w-[100%] h-1 rounded-full relative 
-    before:bg-green-400 before:content-[''] before:w-[85%] before:h-1 before:rounded-full`}>
+    before:bg-emerald-400 before:content-[''] before:w-[85%] before:h-1 before:rounded-full`}>
                         </div>
                     </div>
 
                     <div className='flex flex-col gap-2 '>
                         <span> NEXT JS </span>
                         <div className={`flex bg-gray-100/10 w-[100%] h-1 rounded-full relative 
-    before:bg-green-400 before:content-[''] before:w-[80%] before:h-1 before:rounded-full`}>
+    before:bg-emerald-400 before:content-[''] before:w-[80%] before:h-1 before:rounded-full`}>
                         </div>
                     </div>
 
                     <div className='flex flex-col gap-2 '>
                         <span> Redux / Rtk Query </span>
                         <div className={`flex bg-gray-100/10 w-[100%] h-1 rounded-full relative 
-    before:bg-green-400 before:content-[''] before:w-[85%] before:h-1 before:rounded-full`}>
+    before:bg-emerald-400 before:content-[''] before:w-[85%] before:h-1 before:rounded-full`}>
                         </div>
                     </div>
 
@@ -118,9 +117,10 @@ const Skills = () => {
                             style={{
                                 maxWidth: '1000px',
                                 width: '100%',
-                                zIndex: '99',
+                                zIndex: '10',
                                 position: 'relative',
-                                margin: '0 auto'
+                                margin: '0 auto',
+                                color: "green"
                             }}
                             className="to-fade-in fast-anim"
                         >
@@ -129,7 +129,7 @@ const Skills = () => {
                     <div id="taglist" style={{ display: 'none' }}>
                         <ul>
                             {skills.map(skill => (
-                                <li key={skill.title}><a href={skill.href}>{skill.title}</a></li>
+                                <li key={skill.title} ><a c href={skill.href}>{skill.title}</a></li>
                             ))}
                         </ul>
                     </div>

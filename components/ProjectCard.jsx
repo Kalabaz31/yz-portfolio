@@ -10,11 +10,11 @@ const ProjectCard = () => {
             <div className=' mb-4 overflow-hidden relative'>
                 <img className='group-hover:blur-sm' src="https://tf-react-bieber.vercel.app/images/portfolios/portfolio-image-lg-18.jpg" alt="" />
                 <div className='absolute top-[-10px] left-[-10px] right-[-10px] bottom-[-10px] bg-slate-900/70 flex gap-2 justify-center items-center translate-x-[-100%] group-hover:translate-x-0 transition ease-in-out duration-300'>
-                    <button className='w-10 h-10 rounded-full bg-green-400 flex justify-center items-center text-slate-900 text-xl'>
+                    <button className='w-10 h-10 rounded-full bg-emerald-400 flex justify-center items-center text-slate-900 text-xl'>
                         <AiFillGithub />
                     </button>
 
-                    <button className='w-10 h-10 rounded-full bg-green-400 flex justify-center items-center text-slate-900 text-xl'>
+                    <button className='w-10 h-10 rounded-full bg-emerald-400 flex justify-center items-center text-slate-900 text-xl'>
                         <GoLinkExternal />
                     </button>
                 </div>

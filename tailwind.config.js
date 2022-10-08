@@ -13,6 +13,7 @@ module.exports = {
         translate_x_100_reverse: 'translate_x_100_reverse 4s ease-in-out infinite',
         translate_y_100: 'translate_y_100 4s ease-in-out infinite',
         translate_y_100_reverse: 'translate_y_100_reverse 4s ease-in-out infinite',
+        slidedown: 'slidedown 1s ease-in-out ',
 
       }
       , keyframes: {
@@ -35,6 +36,10 @@ module.exports = {
         translate_y_100_reverse: {
           '0%': { transform: 'translateY(35px)' },
           '100%': { transform: 'translateY(-100%)' },
+        },
+        slidedown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0%)' },
         }
       }
 
